@@ -1,9 +1,13 @@
 import React from "react"
+import classNames from "classnames"
 
-const Post = () => {
+import "./style.scss"
+
+const Post = ({ title, body }) => {
 	return (
-		<div>
-			<h1>Post</h1>
+		<div className={classNames("post")}>
+			<h5>{title}</h5>
+			<p>{body}</p>
 		</div>
 	)
 }

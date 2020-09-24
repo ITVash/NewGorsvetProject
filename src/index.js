@@ -7,6 +7,7 @@ import App from "./App"
 import store from "./redux/store"
 import "./index.scss"
 
+window.store = store
 ReactDOM.render(
 	<Router>
 		<Provider store={store}>
