@@ -1,5 +1,5 @@
 import produce from "immer"
-import { Types } from "../actions/post"
+import { Types } from "../coup/actionCreators"
 
 const initialState = {
 	items: [],
@@ -8,7 +8,7 @@ const initialState = {
 
 export default produce((draft, { type, payload }) => {
 	switch (type) {
-		case Types.SET_POST:
+		case Types.SET_COUP:
 			draft.items = payload
 			break
 		case Types.SET_LOADING:
